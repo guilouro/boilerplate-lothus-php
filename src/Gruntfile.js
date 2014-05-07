@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             ".git",
             ".gitignore",
             ".sftp-config.json"
-        ]
+        ],
 
         // Metadata
         pkg: grunt.file.readJSON("package.json"),
@@ -189,9 +189,6 @@ module.exports = function(grunt) {
     // Start server and watch for changes
     grunt.registerTask("default", ["watch"]);
 
-     // Run build
-    grunt.registerTask("runserver", ["connect", "watch"]);
-
     // Run build
     grunt.registerTask("build", ["jshint", "uglify", "compass"]);
 
@@ -203,7 +200,6 @@ module.exports = function(grunt) {
     grunt.registerTask("rsync", ["build", "optimize", "rsync"]);
 
     // Aliases Tasks
-    grunt.registerTask("rs", ["runserver"]);
     grunt.registerTask("b",  ["build"]);
     grunt.registerTask("o",  ["optimize"]);
     grunt.registerTask("f",  ["ftp"]);

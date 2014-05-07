@@ -1,0 +1,49 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "title": "Project Title",
+  "homepage": "www.project.com",
+  "description": "Some description.",
+  "private": true,
+  "author": {
+    "name": "Guilherme Louro",
+    "url": "http://guilhermelouro.com.br",
+    "email": "guilherme-louro@hotmail.com"
+  },
+  "keywords": [
+    "framework",
+    "boilerplate",
+    "project",
+    "sass",
+    "compass",
+    "grunt",
+    "bower",
+    "php"
+  ],
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "time-grunt": "~0.1.1",
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-autoprefixer": "~0.6.3",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-rsync": "~0.2.1",
+    "grunt-ftp-deploy": "0.0.10",
+    "grunt-ftpush": "~0.3.3",
+    "grunt-shell": "~0.6.4"
+  }
+}

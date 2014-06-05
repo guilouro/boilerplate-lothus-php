@@ -101,8 +101,7 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     // Seu script do projeto
-                    "<%= dirs.jsfinal %>/site.min.js": ["<%= dirs.js %>/main.js","<%= dirs.js %>/legacy/*"],
-                    "<%= dirs.jsfinal %>/bootstrap.min.js": ["<%= dirs.js %>/bootstrap/**/*.js"]
+                    "<%= dirs.jsfinal %>/site.min.js": ["<%= dirs.js %>/bootstrap/**/*.js","<%= dirs.js %>/main.js","<%= dirs.js %>/legacy/*"]
                     // CSS para concatenar                   
                 }
             }
@@ -197,12 +196,12 @@ module.exports = function(grunt) {
 
     // Deploy Methods
     grunt.registerTask("ftp", ["build", "optimize", "ftpush"]);
-    grunt.registerTask("rsync", ["build", "optimize", "rsync"]);
+    grunt.registerTask("rsync-b", ["build","rsync"]);
 
     // Aliases Tasks
     grunt.registerTask("b",  ["build"]);
     grunt.registerTask("o",  ["optimize"]);
     grunt.registerTask("f",  ["ftp"]);
-    grunt.registerTask("r",  ["rsync"]);
+    grunt.registerTask("r",  ["rsync-b"]);
 
 };

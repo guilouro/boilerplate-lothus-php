@@ -6,9 +6,9 @@
   "description": "Some description.",
   "private": true,
   "author": {
-    "name": "Guilherme Louro",
-    "url": "http://guilhermelouro.com.br",
-    "email": "guilherme-louro@hotmail.com"
+    "name": "Author name",
+    "url": "http://authorsite.com.br",
+    "email": "author@email.com"
   },
   "keywords": [
     "framework",

@@ -36,7 +36,11 @@ module.exports = function(grunt) {
             "Thumbs.db",
             ".git",
             ".gitignore",
-            ".sftp-config.json"
+            ".sftp-config.json",
+            // "app/webroot/js/tinymce",
+            "app/Controllers/_initController.php",
+            "app/Views/_init",
+            "system/manage.py",
         ],
 
         // Metadata
@@ -158,16 +162,9 @@ module.exports = function(grunt) {
         rsync: {
             options: {
                 args: ["--verbose"],
-                exclusions: "<%= except %>",
+                exclude: "<%= except %>",
                 recursive: true,
                 syncDest: true
-            },
-            staging: {
-                options: {
-                    src: "../FRAMEWORK/",
-                    dest: "/path/server",
-                    host: "user@host.com",
-                }
             },
             production: {
                 options: {
@@ -195,7 +192,7 @@ module.exports = function(grunt) {
     grunt.registerTask("optimize", ["shell:imagemagick"]);
 
     // Deploy Methods
-    grunt.registerTask("ftp", ["build", "optimize", "ftpush"]);
+    grunt.registerTask("ftp", ["build", "ftpush"]);
     grunt.registerTask("rsync-b", ["build","rsync"]);
 
     // Aliases Tasks

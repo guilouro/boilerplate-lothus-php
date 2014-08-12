@@ -36,7 +36,7 @@ module.exports = function(grunt) {
             "Thumbs.db",
             ".git",
             ".gitignore",
-            ".sftp-config.json",
+            "sftp-config.json",
             // "app/webroot/js/tinymce",
             "app/Controllers/_initController.php",
             "app/Views/_init",

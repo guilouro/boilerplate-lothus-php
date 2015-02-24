@@ -21,5 +21,14 @@ $(document).ready(function(){
     $(".search-form").attr("role","search");
 
     // Stuff to do as soon as the DOM is ready;
+    //
+
+    // Single item banner owlcarousel
+    // $(".banner").owlCarousel({
+    //     navigation : true, // Show next and prev buttons
+    //     slideSpeed : 300,
+    //     paginationSpeed : 400,
+    //     singleItem:true
+    // });
 
 });

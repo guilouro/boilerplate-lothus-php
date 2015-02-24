@@ -19,6 +19,7 @@ module.exports = function(grunt) {
             js: "assets/js",
             sass: "assets/sass",
             img: "assets/images",
+            libs: "assets/lib",
 
             // FRAMEWORK PATHS
             base: '../FRAMEWORK',
@@ -105,8 +106,13 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     // Seu script do projeto
-                    "<%= dirs.jsfinal %>/site.min.js": ["<%= dirs.js %>/bootstrap/**/*.js","<%= dirs.js %>/main.js","<%= dirs.js %>/legacy/*"]
-                    // CSS para concatenar                   
+                    "<%= dirs.jsfinal %>/site.min.js": [
+                        "<%= dirs.js %>/bootstrap/**/*.js",
+                        //"<%= dirs.libs %>/owlcarousel/owl.carousel.js",
+                        "<%= dirs.js %>/main.js",
+                        "<%= dirs.js %>/legacy/*"
+                    ]
+                    // CSS para concatenar
                 }
             }
         },
